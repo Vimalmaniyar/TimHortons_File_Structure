@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SofiaProRegular.otf">
+            <string>SofiaPro</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="THAlertView" customModule="TeamHortons" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="THAlertView" customModule="TeamHortons" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="302" height="224"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZ4-fz-gye">
+                    <rect key="frame" x="5" y="5" width="292" height="214"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oog-wA-7Qm">
+                            <rect key="frame" x="12" y="10" width="103" height="13"/>
+                            <fontDescription key="fontDescription" name="SofiaPro" family="Sofia Pro" pointSize="16"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you cancel now, all of your changes will be lost." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etR-EE-3WX">
+                            <rect key="frame" x="12" y="32" width="268" height="82"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="82" id="q39-vJ-ULn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SofiaPro" family="Sofia Pro" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMW-rx-vTo" customClass="CornerRadiusButton" customModule="TeamHortons" customModuleProvider="target">
+                            <rect key="frame" x="12" y="122" width="268" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="qvr-sc-Yr9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SofiaPro" family="Sofia Pro" pointSize="15"/>
+                            <color key="tintColor" name="ThemeRedColor"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Cancel Changes">
+                                <color key="titleColor" name="ThemeRedColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="ThemeRedColor"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="border">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="vup-7G-EtK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24y-W0-dvu" customClass="CornerRadiusButton" customModule="TeamHortons" customModuleProvider="target">
+                            <rect key="frame" x="12" y="170" width="268" height="40"/>
+                            <color key="backgroundColor" name="ThemeRedColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="U5c-2P-vY2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SofiaPro" family="Sofia Pro" pointSize="15"/>
+                            <color key="tintColor" name="ThemeWhiteColor"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Keep Customising"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="border">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="ThemeRedColor"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="done:" destination="iN0-l3-epB" eventType="touchUpInside" id="u0j-nl-RMi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="FMW-rx-vTo" firstAttribute="leading" secondItem="mZ4-fz-gye" secondAttribute="leading" constant="12" id="0Lo-mX-itm"/>
+                        <constraint firstItem="Oog-wA-7Qm" firstAttribute="leading" secondItem="mZ4-fz-gye" secondAttribute="leading" constant="12" id="CBr-fe-6h1"/>
+                        <constraint firstItem="FMW-rx-vTo" firstAttribute="top" secondItem="etR-EE-3WX" secondAttribute="bottom" constant="8" symbolic="YES" id="Fii-P8-AiP"/>
+                        <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Oog-wA-7Qm" secondAttribute="trailing" constant="177" id="PJD-12-LRY"/>
+                        <constraint firstAttribute="trailing" secondItem="etR-EE-3WX" secondAttribute="trailing" constant="12" id="S1E-cm-mTm"/>
+                        <constraint firstAttribute="trailing" secondItem="FMW-rx-vTo" secondAttribute="trailing" constant="12" id="So6-g3-Rnt"/>
+                        <constraint firstItem="24y-W0-dvu" firstAttribute="top" secondItem="FMW-rx-vTo" secondAttribute="bottom" constant="8" symbolic="YES" id="X8V-1W-kOa"/>
+                        <constraint firstItem="Oog-wA-7Qm" firstAttribute="top" secondItem="mZ4-fz-gye" secondAttribute="top" constant="10" id="X9j-qf-zyu"/>
+                        <constraint firstItem="etR-EE-3WX" firstAttribute="leading" secondItem="mZ4-fz-gye" secondAttribute="leading" constant="12" id="ey0-y4-kfI"/>
+                        <constraint firstItem="etR-EE-3WX" firstAttribute="top" secondItem="Oog-wA-7Qm" secondAttribute="bottom" constant="9" id="uSo-e5-ySE"/>
+                        <constraint firstAttribute="bottom" secondItem="24y-W0-dvu" secondAttribute="bottom" constant="4" id="xo0-ti-OWL"/>
+                        <constraint firstItem="24y-W0-dvu" firstAttribute="leading" secondItem="mZ4-fz-gye" secondAttribute="leading" constant="12" id="xtC-Sp-7eh"/>
+                        <constraint firstAttribute="trailing" secondItem="24y-W0-dvu" secondAttribute="trailing" constant="12" id="y1V-78-mkO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mZ4-fz-gye" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="3HF-HQ-38I"/>
+                <constraint firstItem="mZ4-fz-gye" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Orq-ff-ieV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mZ4-fz-gye" secondAttribute="trailing" constant="5" id="m6a-eu-yqc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mZ4-fz-gye" secondAttribute="bottom" constant="5" id="qno-DM-u4r"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="FMW-rx-vTo" id="9H7-yf-euZ"/>
+                <outlet property="lblDescritpion" destination="etR-EE-3WX" id="mgU-lu-vNy"/>
+                <outlet property="lblTitle" destination="Oog-wA-7Qm" id="0kH-Iq-TxA"/>
+                <outlet property="okButton" destination="24y-W0-dvu" id="iGt-qg-vGg"/>
+            </connections>
+            <point key="canvasLocation" x="260.86956521739131" y="10.714285714285714"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="24y-W0-dvu">
+            <size key="intrinsicContentSize" width="122" height="27"/>
+        </designable>
+        <designable name="FMW-rx-vTo">
+            <size key="intrinsicContentSize" width="112" height="27"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="ThemeRedColor">
+            <color red="0.78431372549019607" green="0.062745098039215685" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemeWhiteColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

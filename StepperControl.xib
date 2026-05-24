@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sofia Pro Bold Az.otf">
+            <string>SofiaPro-Bold</string>
+        </array>
+        <array key="SofiaProRegular.otf">
+            <string>SofiaPro</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StepperControl" customModule="TeamHortons" customModuleProvider="target">
+            <connections>
+                <outlet property="btnMinus" destination="w8Y-5D-OvQ" id="PIY-qt-AIA"/>
+                <outlet property="btnPlush" destination="NDE-5b-atc" id="nK4-3W-17w"/>
+                <outlet property="lblValue" destination="q0m-Sj-Kzy" id="jNB-Mz-h0S"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StepperControl" customModule="TeamHortons" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="219" height="71"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VHi-67-xYE">
+                    <rect key="frame" x="0.0" y="0.0" width="219" height="71"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8Y-5D-OvQ" customClass="CornerRadiusButton" customModule="TeamHortons" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="3" width="69.5" height="65"/>
+                            <fontDescription key="fontDescription" name="SofiaPro-Bold" family="Sofia Pro" pointSize="45"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="-">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="border">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0m-Sj-Kzy">
+                            <rect key="frame" x="74.5" y="26" width="70" height="19"/>
+                            <fontDescription key="fontDescription" name="SofiaPro" family="Sofia Pro" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDE-5b-atc" customClass="CornerRadiusButton" customModule="TeamHortons" customModuleProvider="target">
+                            <rect key="frame" x="149.5" y="3" width="69.5" height="65"/>
+                            <fontDescription key="fontDescription" name="SofiaPro-Bold" family="Sofia Pro" pointSize="45"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="+">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="border">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="VHi-67-xYE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IID-4L-h76"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VHi-67-xYE" secondAttribute="trailing" id="QJg-IA-vYS"/>
+                <constraint firstItem="VHi-67-xYE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RHb-6O-f63"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="VHi-67-xYE" secondAttribute="bottom" id="j4u-I3-vX5"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="92.028985507246389" y="-134.93303571428569"/>
+        </view>
+        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" id="3iG-kf-Z2g">
+            <rect key="frame" x="0.0" y="0.0" width="219" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQe-Yp-n2W" customClass="CornerRadiusButton" customModule="TeamHortons" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="3" width="69.5" height="65"/>
+                    <fontDescription key="fontDescription" name="SofiaPro-Bold" family="Sofia Pro" pointSize="45"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="-">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="border">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHg-sO-7ah">
+                    <rect key="frame" x="74.5" y="27" width="70" height="17.5"/>
+                    <fontDescription key="fontDescription" name="SofiaPro" family="Sofia Pro" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noa-gh-PcP" customClass="CornerRadiusButton" customModule="TeamHortons" customModuleProvider="target">
+                    <rect key="frame" x="149.5" y="3" width="69.5" height="65"/>
+                    <fontDescription key="fontDescription" name="SofiaPro-Bold" family="Sofia Pro" pointSize="45"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="+">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="border">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lMk-g4-roe"/>
+            <point key="canvasLocation" x="-9" y="-226"/>
+        </stackView>
+    </objects>
+    <designables>
+        <designable name="NDE-5b-atc">
+            <size key="intrinsicContentSize" width="30" height="65"/>
+        </designable>
+        <designable name="RQe-Yp-n2W">
+            <size key="intrinsicContentSize" width="30" height="65"/>
+        </designable>
+        <designable name="noa-gh-PcP">
+            <size key="intrinsicContentSize" width="30" height="65"/>
+        </designable>
+        <designable name="w8Y-5D-OvQ">
+            <size key="intrinsicContentSize" width="30" height="65"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
